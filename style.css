@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to left, rgb(99, 96, 96), rgb(31, 31, 31));
+}
+
+.firstpage {
+  display: flex;
+  justify-content: center;
+}
+
+.forms {
+  margin-top: 30px;
+  /* border: 2px solid black; */
+  border-radius: 35px;
+  padding: 30px;
+  background-color: rgb(127, 255, 212, 0.3);
+  box-shadow: 9px 7px 9px 7px rgb(31, 30, 30), 9px 7px 9px 8px rgb(54, 53, 53);
+  font-size: large;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(255, 84, 32);
+  text-shadow: 2px 2px black;
+}
+.forms .food {
+  margin-left: 5px;
+}
+.forms input {
+  margin-top: 10px;
+  font-size: large;
+  padding-left: 3px;
+}
+.forms select {
+  margin-top: 10px;
+  font-size: large;
+  /* margin-bottom: 10px; */
+}
+.button {
+  font-size: large;
+  margin-top: 20px;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgb(198, 226, 43);
+  color: rgb(255, 1, 1);
+}
+
+.table {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+  font-size: large;
+  font-weight: bold;
+}
+
+th {
+  color: rgb(255, 32, 32);
+  text-shadow: 2px 2px black;
+}
+
+@media only screen and (max-width: 900px) {
+  .forms {
+    margin: 30px 10px 20px 10px;
+    /* padding: 10px; */
+    font-size: small;
+  }
+  table,
+  th,
+  td {
+    margin: 10px 10px 20px 10px;
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .forms {
+    margin: 30px 10px 20px 10px;
+    /* padding: 10px; */
+    font-size: x-small;
+  }
+  table,
+  th,
+  td {
+    margin: 10px 10px 20px 10px;
+    font-size: x-small;
+  }
+}

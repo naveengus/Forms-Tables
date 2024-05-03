@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form and table</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="firstpage">
+      <form class="forms" id="myForm">
+        <h2>Foodie Heaven's</h2>
+        <label for="firstName"> First Name :</label>
+        <input type="text" name="firstName" id="firstName" required /><br />
+
+        <label for="lastName"> Last Name :</label>
+        <input type="text" name="lastName" id="lastName" required /><br />
+
+        <label for="address"> Address :</label>
+        <input type="text" name="address" id="address" required /><br />
+
+        <label for="pincode"> Pincode :</label>
+        <input type="number" name="Pincode" id="pincode" required /><br />
+
+        <label for="gender"> Gender :</label>
+        <select name="gender" id="gender">
+          <option></option>
+          <option value="male">Male</option>
+          <option value="femle">Female</option>
+          <option value="others">Others</option></select
+        ><br />
+
+        <label for="food"> Choice of Food :</label>
+        <input type="checkbox" name="food1" class="food" id="food1" />Biriyani
+        <input type="checkbox" name="food2" class="food" id="food2" />Burger
+        <input type="checkbox" name="food3" class="food" id="food3" />Pizza
+        <input type="checkbox" name="food4" class="food" id="food4" />Sandwich
+        <input
+          type="checkbox"
+          name="food5"
+          class="food"
+          id="food5"
+        />Noodels<br />
+
+        <label for="state"> State :</label>
+        <input type="text" name="state" id="state" required /><br />
+
+        <label for="country"> Country :</label>
+        <input type="text" name="country" id="country" required /><br />
+
+        <button type="submit" class="button" id="button">Submit</button>
+      </form>
+    </div>
+
+    <div class="table">
+      <table id="dataTable">
+        <thead>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Address</th>
+          <th>Pincode</th>
+          <th>Gender</th>
+          <th>Food</th>
+          <th>State</th>
+          <th>Country</th>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
